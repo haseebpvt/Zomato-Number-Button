@@ -1,11 +1,21 @@
 package com.pensource.zomatonumberbutton
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.compose.setContent
+import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.foundation.layout.Column
+import androidx.compose.material.Text
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        setContent {
+            Column {
+                Text(text = "Abdul Haseeb")
+                Text(text = "Android developer")
+            }
+        }
     }
 }
